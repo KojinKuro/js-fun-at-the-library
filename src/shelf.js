@@ -4,7 +4,7 @@ function shelfBook(book, shelf) {
 }
 
 function unshelfBook(bookName, shelf) {
-  bookIndex = shelf.findIndex((b) => b.title === bookName);
+  var bookIndex = shelf.findIndex((b) => b.title === bookName);
   shelf.splice(bookIndex,1);
 }
 
